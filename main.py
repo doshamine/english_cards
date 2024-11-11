@@ -38,6 +38,7 @@ engine = sq.create_engine(DSN)
 Session = sessionmaker(bind=engine)
 session = Session()
 
+
 def person_exists(cid: int) -> bool:
     """ Проверяет по базе данных, существует ли пользователь с переданным message.chat.id.
 
